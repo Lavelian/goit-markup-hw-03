@@ -50,6 +50,20 @@ img {
   margin-bottom: 0;
   margin-top: 0;
 }
+.hidden-title {
+  visibility: hidden;
+}
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
+}
+.content-header {
+  display: flex;
+  align-items: center;
+}
+
 .header-link {
   color: #000000;
   font-family: 'Raleway', sans-serif;
@@ -70,14 +84,7 @@ img {
 .color-portfolio {
   color: var(--acent-color-text);
 }
-/* РіР»Р°РІРЅР°СЏ РЅР°РІРёРіР°С†РёСЏ */
-.content-header {
-  display: flex;
-  align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border: 1px solid #ececec;
-}
+
 .main-nav {
   display: flex;
 }
@@ -101,7 +108,6 @@ img {
   margin-right: 0;
 }
 
-/* РЅР°РІРёРіР°С†РёСЏ РЅР° РІРЅРµС€.СЂРµСЃСѓСЂСЃС‹ */
 .aught-nav {
   display: flex;
   margin-left: auto;
@@ -131,7 +137,7 @@ aught-nav-item:last-child {
   padding-right: 15px;
 }
 
-/* РіРµСЂРѕР№ */
+/* герой*/
 
 .hero-section {
   padding-top: 200px;
@@ -146,12 +152,15 @@ aught-nav-item:last-child {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+
   /* or 136% */
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-hero);
-  margin-bottom: 30px;
+
+  margin: 0 auto 30px;
+  max-width: 696;
 }
 
 .hero-btn {
@@ -176,7 +185,10 @@ aught-nav-item:last-child {
   padding-bottom: 94px;
 }
 
-/* С†РµРЅРѕСЃС‚Рё */
+/* цености */
+.values.section {
+  padding-bottom: 0;
+}
 .values-lists {
   display: flex;
 }
@@ -217,7 +229,10 @@ aught-nav-item:last-child {
 .about-list:last-child {
   margin-right: 0;
 }
-/* РєРѕРјР°РЅРґР°  */
+/* команда  */
+.teams.section {
+  background: #f5f4fa;
+}
 .teams-lists {
   display: flex;
 }
@@ -236,25 +251,29 @@ aught-nav-item:last-child {
 .team-list:last-child {
   margin-right: 0;
 }
-.team-list > img {
-  margin-bottom: 30px;
-}
-.team-list > h3 {
+
+.team-list h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   /* identical to box height */
   color: var(--secondary-color-text);
-  margin-bottom: 30px;
 }
-.team-list > p {
+.team-list p {
   font-size: 16px;
   line-height: 1.18;
   /* identical to box height */
   padding-bottom: 30px;
 }
 
-/* С„СѓС‚С‚РµСЂ */
+.team-card {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.team-card > h3 {
+  margin-bottom: 10px;
+}
+/*Футтер */
 .footer {
   background-color: #2f303a;
   color: #ffffff;
@@ -283,16 +302,19 @@ aught-nav-item:last-child {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+}
+.footer-address-item {
   margin-bottom: 9px;
 }
-.footer-address-link:last-child {
-  margin-bottom: 0px;
+.footer-address-item:last-child {
+  margin-bottom: 0;
 }
+
 .footer-address-list .footer-address-link:hover,
 .footer-address-list .footer-address-link:focus {
   color: var(--acent-color-text);
 }
-/* РџРѕС‚С„РѕР»РёРѕ */
+/* Портфолио */
 
 .button {
   font-family: inherit;
@@ -314,11 +336,14 @@ aught-nav-item:last-child {
   justify-content: center;
 }
 .button {
-  margin-right: 8px;
   padding: 6px 22px;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
-.button:last-child {
+.button-list {
+  margin-right: 8px;
+}
+
+.button-list:last-child {
   margin-right: 8px;
 }
 .buttons .button:hover,
@@ -334,7 +359,7 @@ aught-nav-item:last-child {
   margin-top: -30px;
 }
 .works > .work-item {
-  flex-basis: calc(100%-30 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -345,6 +370,9 @@ aught-nav-item:last-child {
   line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
+}
+.work-item {
+  border: 1px solid #eeeeee;
 }
 .work-item p {
   font-size: 16px;
