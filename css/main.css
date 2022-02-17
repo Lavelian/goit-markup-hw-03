@@ -1,0 +1,211 @@
+/* color-hero-logo : FFFFFF 
+
+primary-color-text :  #757575
+secondary-color-text : #212121
+acent-color #2196F3
+*/
+
+:root {
+  --primary-color-text: #757575;
+  --secondary-color-text: #212121;
+  --color-hero: #ffffff;
+  --acent-color-button-text: #f5f4fa;
+  --acent-color-button-background: #2196f3;
+  --acent-color-text: #2196f3;
+  --color-button-background: #f5f4fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color-text);
+  font-style: normal;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+.list {
+  list-style-type: none;
+}
+.header-link {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.92;
+}
+
+.logo {
+  color: var(--acent-color-text);
+}
+.color-studio {
+  color: var(--acent-color-text);
+}
+.color-portfolio {
+  color: var(--acent-color-text);
+}
+/* главная навигация */
+.main-nav .main-nav-list:hover,
+.main-nav .main-nav-list:focus {
+  color: var(--acent-color-text);
+}
+
+.main-nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-text);
+}
+/* навигация на внеш.ресурсы */
+.aught-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.aught-nav .aught-nav-link:hover,
+.aught-nav .aught-nav-link:focus {
+  color: var(--acent-color-text);
+}
+/* герой */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-hero);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+  color: var(--color-hero);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* цености */
+.values-list > h3 {
+  color: var(--secondary-color-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.values-list > p {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* о нас  */
+.about > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--secondary-color-text);
+}
+/* команда  */
+.teams > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--secondary-color-text);
+}
+.teams-list > h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+  color: var(--secondary-color-text);
+}
+.teams-list > p {
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+}
+/* футтер */
+.footer {
+  background-color: #2f303a;
+  color: #ffffff;
+}
+.footer > a {
+  font-family: 'Raleway', sans-serif;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.92;
+}
+
+.footer-address > p {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-address-link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address-list .footer-address-link:hover,
+.footer-address-list .footer-address-link:focus {
+  color: var(--acent-color-text);
+}
+/* Потфолио */
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  color: var(--secondary-color-text);
+  background: var(--color-button-background);
+  border-radius: 4px;
+}
+.button {
+  cursor: pointer;
+}
+
+.buttons .button:hover,
+.buttons .button:focus {
+  color: var(--acent-color-button-text);
+  background: var(--acent-color-button-background);
+}
+
+.works-list > h3 {
+  color: var(--secondary-color-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+}
+.works-list > p {
+  font-size: 16px;
+  line-height: 1.87;
+
+  /* identical to box height, or 187% */
+}
