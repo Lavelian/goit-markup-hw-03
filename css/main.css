@@ -67,7 +67,7 @@ img {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .content-header {
   display: flex;
@@ -80,7 +80,7 @@ img {
 
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.92;
+  line-height: 1.19;
 
   margin-right: 93px;
 }
@@ -171,7 +171,7 @@ img {
   color: var(--color-hero);
 
   margin: 0 auto 30px;
-  max-width: 696;
+  width: 696px;
 }
 
 .hero-btn {
@@ -205,6 +205,7 @@ img {
 }
 .values-list {
   margin-right: 30px;
+  width: 270px;
 }
 .values-list:last-child {
   margin-right: 0;
@@ -340,25 +341,25 @@ img {
   color: var(--secondary-color-text);
   background: var(--color-button-background);
   border-radius: 4px;
-}
-.button {
+  border: none;
   cursor: pointer;
+  padding: 6px 22px;
 }
+
 .buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 54px;
 }
-.button {
-  padding: 6px 22px;
-  margin-bottom: 50px;
-}
+
 .button-list {
   margin-right: 8px;
 }
 
 .button-list:last-child {
-  margin-right: 8px;
+  margin-right: 0;
 }
+
 .buttons .button:hover,
 .buttons .button:focus {
   color: var(--acent-color-button-text);
@@ -371,7 +372,7 @@ img {
   margin-left: -30px;
   margin-top: -30px;
 }
-.works > .work-item {
+.work-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -384,9 +385,7 @@ img {
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
 }
-.work-item {
-  border: 1px solid #eeeeee;
-}
+
 .work-item p {
   font-size: 16px;
   line-height: 1.87;
@@ -396,6 +395,9 @@ img {
 
 .item-content {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .item-content > h3 {
