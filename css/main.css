@@ -121,9 +121,10 @@ img {
 .aught-nav-item {
   margin-right: 50px;
 }
-aught-nav-item:last-child {
-  margin-right: 50px;
+.aught-nav-item:last-child {
+  margin-right: 0px;
 }
+
 .aught-nav .aught-nav-link:hover,
 .aught-nav .aught-nav-link:focus {
   color: var(--acent-color-text);
